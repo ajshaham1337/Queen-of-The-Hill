@@ -1,6 +1,12 @@
 let cheatMode = false;
 
+let instructions = true;
+
 // UI Objects
+let howToPlay;
+let instructionStep = 0;
+let startedGame = false;
+
 let titleScreenBG;
 let titleText;
 let clickToPlay;
@@ -186,6 +192,7 @@ let plane;
 let rocket;
 
 let music;
+let musicLoaded = false;
 
 let clickSound;
 
@@ -369,6 +376,11 @@ function initializeUIElements() {
     clickSound = new Audio(GAME.ASSETS_PATH + "clickSound.mp3");
     clickSound.volume = .5;
 
+    if (instructions) {
+        instructionStep = 1;
+        howToPlay = new RenderText("Click to start making ants!", GAME.WIDTH * 0.5, 340, "12px 'Press Start 2P'", "#6c6c6c", "center", false, -1);
+    }
+
     timePlayed = 0;
 }
 
@@ -401,6 +413,14 @@ function update() {
         GAME.TICKS % 200 < 100 ? clickToPlay.y -= 0.5 : clickToPlay.y += 0.5;
         GAME.TICKS % 200 < 100 ? clickToPlay.width += 1 : clickToPlay.width -= 1;
         GAME.TICKS % 200 < 100 ? clickToPlay.height += 1 : clickToPlay.height -= 1;
+    }
+
+    if (!musicLoaded && music) {
+        musicLoaded = true;
+        music.addEventListener('ended', function () {
+            this.currentTime = 0;
+            this.play();
+        }, false);
     }
 
     timePlayed++;
@@ -564,6 +584,11 @@ function showAllocationTab() {
     setTabActive(militaryUpgradesTabElements, false);
     setTabActive(scienceUpgradesTabElements, false);
     setTabActive(religionUpgradesTabElements, false);
+
+    if (instructions && instructionStep >= 2) {
+        howToPlay.text = "Here you can specialize your basic ants";
+        instructionStep = 2;
+    }
 }
 
 // Shows all upgrade tab elements
@@ -574,6 +599,11 @@ function showUpgradesTab() {
     setTabActive(infoTabElements, false);
     // Sub Tabs
     showWorkerTab();
+
+    if (instructions && instructionStep >= 1) {
+        howToPlay.text = "Upgrades have a sugar cost and ant requirement";
+        instructionStep = 2;
+    }
 }
 
 // Shows all info tab elements
@@ -588,6 +618,11 @@ function showInfoTab() {
     setTabActive(militaryUpgradesTabElements, false);
     setTabActive(scienceUpgradesTabElements, false);
     setTabActive(religionUpgradesTabElements, false);
+
+    if (instructions && instructionStep >= 1) {
+        howToPlay.text = "Here is your production information";
+        instructionStep = 2;
+    }
 }
 
 function showWorkerTab() {
@@ -646,7 +681,7 @@ function setTabActive(tab, active) {
             }
         }
     });
-    if (active) {
+    if (active && startedGame) {
         clickSound.play();
     }
 }
@@ -1080,6 +1115,8 @@ function displayUpgrade(category, id, name, cost, description, requirements, eff
                             antLimit = newPopulationCap; // = -> += 
                         }
                         if (currentBackground != background && background > bg) {
+                            instructions = false;
+                            destroy(howToPlay);
                             gameBackground.image.src = GAME.ASSETS_PATH + "tallBG" + background + ".png";
                             currentBackground = background;
                             bg = background;
@@ -1399,7 +1436,7 @@ function simplifyNumber(number) {
 
 function formatNumber(x, decimals) {
     var str = [x.slice(0, x.length - decimals), ".", x.slice(x.length - decimals)].join('');
-    if (str.substring(str.length - 2) == ".0") {
+    if (str.substring(str.length - 2) == ".0" || str.length == 5) {
         return str.substring(0, str.length - 2);
     }
     return str;
@@ -1411,10 +1448,6 @@ function clearIntro() {
     destroy(clickToPlay);
     destroy(titleAntsheetMiddle);
     destroy(titleAntsheetBottom);
+    startedGame = true;
     music.play();
-  }
-
-music.addEventListener('ended', function () {
-    this.currentTime = 0;
-    this.play();
-}, false);
+}
