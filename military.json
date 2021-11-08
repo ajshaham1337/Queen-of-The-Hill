@@ -1,0 +1,212 @@
+{
+    "Upgrades" : 
+    [ 
+        {
+            "Name": "Scouts",
+            "Description": "Organize basic patrol groups.",
+            "Cost": 100,
+            "UnlockRequirements": [
+                {
+                "Science": 0,
+                "Religion": 0,
+                "Military": 20
+                }
+            ],
+            "Effect": [ 
+                {
+                    "populationCap": 500,
+                    "background": 1
+                } 
+            ]
+        },
+
+        {
+            "Name": "Sharpened Antenna",
+            "Description": "Ants now have a collective conscience!",
+            "Cost": 800,
+            "UnlockRequirements": [
+                {
+                    "Science": 0,
+                    "Religion": 0,
+                    "Military": 150
+                }
+            ],
+            "Effect": [ 
+                {
+                    "populationCap": 10000,
+                    "background": 1
+                } 
+            ]
+        },
+
+        {
+            "Name": "House Invasion",
+            "Description": "Take over your human's house.",
+            "Cost": 9800,
+            "UnlockRequirements": [
+                {
+                    "Science": 0,
+                    "Religion": 0,
+                    "Military": 3500
+                }
+            ],
+            "Effect": [ 
+                {
+                    "populationCap": 425000,
+                    "background": 2
+                } 
+            ]
+        },
+
+        {
+            "Name": "Ant Armies",
+            "Description": "Organize large armies of ants.",
+            "Cost": 121000,
+            "UnlockRequirements": [
+                {
+                    "Science": 0,
+                    "Religion": 0,
+                    "Military": 70000
+                }
+            ],
+            "Effect": [ 
+                {
+                    "populationCap": 3750000,
+                    "background": 2
+                } 
+            ]
+        },
+
+        {
+            "Name": "Advanced Weaponry",
+            "Description": "Mini rifles, tanks, and more...",
+            "Cost": 2200000,
+            "UnlockRequirements": [
+                {
+                    "Science": 0,
+                    "Religion": 0,
+                    "Military": 625000
+                }
+            ],
+            "Effect": [ 
+                {
+                    "populationCap": 17000000,
+                    "background": 2
+                } 
+            ]
+        },
+
+        {
+            "Name": "City Invasion",
+            "Description": "The infestation cannot be contained.",
+            "Cost": 928000000,
+            "UnlockRequirements": [
+                {
+                    "Science": 0,
+                    "Religion": 0,
+                    "Military": 2830000
+                }
+            ],
+            "Effect": [ 
+                {
+                    "populationCap": 203000000,
+                    "background": 3
+                } 
+            ]
+        },
+
+        {
+            "Name": "Ant AI",
+            "Description": "Killer ant robots, oh boy!",
+            "Cost": 3200000000,
+            "UnlockRequirements": [
+                {
+                    "Science": 0,
+                    "Religion": 0,
+                    "Military": 33800000
+                }
+            ],
+            "Effect": [ 
+                {
+                    "populationCap": 1200000000,
+                    "background": 3
+                } 
+            ]
+        },
+
+        {
+            "Name": "Domestic Invasion",
+            "Description": "Ants can even overthrow a country.",
+            "Cost": 8510000000000,
+            "UnlockRequirements": [
+                {
+                    "Science": 0,
+                    "Religion": 0,
+                    "Military": 200000000
+                }
+            ],
+            "Effect": [ 
+                {
+                    "populationCap": 33550000000,
+                    "background": 4
+                } 
+            ]
+        },
+
+        {
+            "Name": "Military Hacking",
+            "Description": "Ants took over the humans' weapon arsenals.",
+            "Cost": 98900000000000,
+            "UnlockRequirements": [
+                {
+                    "Science": 0,
+                    "Religion": 0,
+                    "Military": 5591000000
+                }
+            ],
+            "Effect": [ 
+                {
+                    "populationCap": 251500000000,
+                    "background": 4
+                } 
+            ]
+        },
+
+        {
+            "Name": "Global Invasion",
+            "Description": "Ants are Earth's apex predators now.",
+            "Cost": 3170000000000000,
+            "UnlockRequirements": [
+                {
+                    "Science": 0,
+                    "Religion": 0,
+                    "Military": 41910000000
+                }
+            ],
+            "Effect": [ 
+                {
+                    "populationCap": 3772000000000,
+                    "background": 5
+                } 
+            ]
+        },
+
+        {
+            "Name": "Execute Plan: A. N. T.",
+            "Description": "The entire world will become our ant hill!",
+            "Cost": 69420694206942069,
+            "UnlockRequirements": [
+                {
+                    "Science": 0,
+                    "Religion": 0,
+                    "Military": 100000000000
+                }
+            ],
+            "Effect": [ 
+                {
+                    "militaryWin": true
+                } 
+            ]
+        }
+    ] 
+}

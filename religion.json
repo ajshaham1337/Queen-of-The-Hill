@@ -1,0 +1,201 @@
+{
+    "Upgrades": [
+        {
+            "Name": "Holy Tree",
+            "Description": "She's more than just a queen.",
+            "Cost": 75,
+            "UnlockRequirements": [
+                {
+                    "Science": 0,
+                    "Religion": 25,
+                    "Military": 0
+                }
+            ],
+            "Effect": [ 
+                {
+                    "sugarPerAnt": 0.25
+                } 
+            ]
+        }, 
+
+        {
+            "Name": "Weekly Prayers",
+            "Description": "Remember to pray to the queen!",
+            "Cost": 600,
+            "UnlockRequirements": [
+                {
+                    "Science": 0,
+                    "Religion": 100,
+                    "Military": 0
+                }
+            ],
+            "Effect": [ 
+                {
+                    "sugarPerAnt": 0.5
+                }
+            ]
+        },
+        
+        {
+            "Name": "New Rituals and Practices",
+            "Description": "The queen will be pleased.",
+            "Cost": 5800,
+            "UnlockRequirements": [
+                {
+                    "Science": 0,
+                    "Religion": 2000,
+                    "Military": 0
+                }
+            ],
+            "Effect": [ 
+                {
+                    "sugarPerAnt": 1
+                } 
+            ]
+        },
+        
+        {
+            "Name": "Chapels",
+            "Description": "A place for group worship.",
+            "Cost": 82000,
+            "UnlockRequirements": [
+                {
+                    "Science": 0,
+                    "Religion": 55000,
+                    "Military": 0
+                }
+            ],
+            "Effect": [ 
+                {
+                    "sugarPerAnt": 2
+                } 
+            ]
+        },
+        
+        {
+            "Name": "Cathedrals",
+            "Description": "The holiest of places for worship.",
+            "Cost": 1300000,
+            "UnlockRequirements": [
+                {
+                    "Science": 0,
+                    "Religion": 312000,
+                    "Military": 0
+                }
+            ],
+            "Effect": [ 
+                {
+                    "sugarPerAnt": 5
+                } 
+            ]
+        },
+        
+        {
+            "Name": "Church Schools",
+            "Description": "Ants are brought up to praise the queen.",
+            "Cost": 459000000,
+            "UnlockRequirements": [
+                {
+                    "Science": 0,
+                    "Religion": 1400000,
+                    "Military": 0
+                }
+            ],
+            "Effect": [ 
+                {
+                    "sugarPerAnt": 10
+                } 
+            ]
+        },
+        
+        {
+            "Name": "Forced Conversions",
+            "Description": "There is no other religion.",
+            "Cost": 1300000000,
+            "UnlockRequirements": [
+                {
+                    "Science": 0,
+                    "Religion": 15000000,
+                    "Military": 0
+                }
+            ],
+            "Effect": [ 
+                {
+                    "sugarPerAnt": 15
+                } 
+            ]
+        },
+        
+        {
+            "Name": "Scare Tactics",
+            "Description": "These practices are getting out of hand.",
+            "Cost": 4620000000000,
+            "UnlockRequirements": [
+                {
+                    "Science": 0,
+                    "Religion": 120000000,
+                    "Military": 0
+                }
+            ],
+            "Effect": [ 
+                {
+                    "sugarPerAnt": 25
+                } 
+            ]
+        },
+        
+        {
+            "Name": "Punishment",
+            "Description": "Unfaithful ants will be punished.",
+            "Cost": 6930000000000,
+            "UnlockRequirements": [
+                {
+                    "Science": 0,
+                    "Religion": 2500000000,
+                    "Military": 0
+                }
+            ],
+            "Effect": [ 
+                {
+                    "sugarPerAnt": 50
+                } 
+            ]
+        },
+        
+        {
+            "Name": "Ant Sacrifice",
+            "Description": "Sacrifice ants to prove faith in the queen.",
+            "Cost": 853000000000000,
+            "UnlockRequirements": [
+                {
+                    "Science": 0,
+                    "Religion": 20100000000,
+                    "Military": 0
+                }
+            ],
+            "Effect": [ 
+                {
+                    "sugarPerAnt": 100
+                } 
+            ]
+        },
+
+        {
+            "Name": "Perform the Final Ritual",
+            "Description": "Summon our ant god to judge this world!",
+            "Cost": 89800000000000000,
+            "UnlockRequirements": [
+                {
+                    "Science": 0,
+                    "Religion": 500000000000,
+                    "Military": 0
+                }
+            ],
+            "Effect": [ 
+                {
+                    "religionWin": true
+                } 
+            ]
+        }
+    ]
+}
