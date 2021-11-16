@@ -111,7 +111,7 @@
         {
             "Name": "AIT",
             "Description": "Ant Institute of Technology.",
-            "Cost": 4700000000000,
+            "Cost": 47000000000,
             "UnlockRequirements": [
                 {
                     "Science": 13000000,
@@ -150,7 +150,7 @@
             "Cost": 3290000000000,
             "UnlockRequirements": [
                 {
-                    "Science": 110000000,
+                    "Science": 1100000000,
                     "Religion": 0,
                     "Military": 0
                 }

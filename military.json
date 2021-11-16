@@ -52,7 +52,7 @@
             ],
             "Effect": [ 
                 {
-                    "populationCap": 425000,
+                    "populationCap": 450000,
                     "background": 2
                 } 
             ]
